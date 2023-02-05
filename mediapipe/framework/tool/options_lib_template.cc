@@ -39,11 +39,11 @@ mediapipe::FieldData ReadFileDescriptorSet(const std::string& pb) {
 
 }  // namespace
 
-namespace mediapipe {
-// The protobuf descriptor for an options message type.
-template <>
-const RegistrationToken tool::OptionsRegistry::registration_token<
-    MP_OPTION_TYPE_NS::MP_OPTION_TYPE_NAME> =
-    tool::OptionsRegistry::Register(ReadFileDescriptorSet(
-        std::string(kDescriptorContents, sizeof(kDescriptorContents) - 1)));
-}  // namespace mediapipe
+//namespace mediapipe {
+//// The protobuf descriptor for an options message type.
+//template <>
+//const RegistrationToken tool::OptionsRegistry::registration_token<
+//    MP_OPTION_TYPE_NS::MP_OPTION_TYPE_NAME> =
+//    tool::OptionsRegistry::Register(ReadFileDescriptorSet(
+//        std::string(kDescriptorContents, sizeof(kDescriptorContents) - 1)));
+//}  // namespace mediapipe

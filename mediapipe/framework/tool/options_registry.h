@@ -43,8 +43,8 @@ class OptionsRegistry {
   static absl::Mutex& mutex();
 
   // Registers the descriptors for each options protobuf type.
-  template <class MessageT>
-  static const RegistrationToken registration_token;
+  //template <class MessageT>
+  //static const RegistrationToken registration_token;
 };
 
 // A custom implementation proto_ns::Descriptor.  This implementation
